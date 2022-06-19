@@ -6,16 +6,16 @@ from tkinter.messagebox import *
 from tkinter.filedialog import *
 from tkinter import ttk
 
-def cole_doo():
+def call_doo():
         subprocess.Popen(r'C:\Windows\System32\DXDiag.exe')
 
-def cole_foo():
+def call_foo():
         subprocess.Popen(r'C:\Windows\System32\SystemPropertiesAdvanced.exe',shell = True)
 
-def cole_boo():
+def call_boo():
         subprocess.Popen(r'"C:\Windows\System32\rundll32.exe" shell32.dll,Control_RunDLL desk.cpl,,0',shell = True)
 
-def cole_goodbye():
+def call_goodbye():
         root.destroy()
 
 root = Tk()
@@ -41,7 +41,7 @@ label1_2 = ttk.Label(frame1,text='ドライバー機能している？',padding=
 label1_2.grid(row=0, column=2)
 
 # button 1
-button1 = ttk.Button(frame1, text='DirectX_Check_Tool',command=cole_doo,padding=[20,20,20,20])
+button1 = ttk.Button(frame1, text='DirectX_Check_Tool',command=call_doo,padding=[20,20,20,20])
 button1.grid(row=0, column=1)
 
 # Image_2
@@ -56,7 +56,7 @@ label2_1 = ttk.Label(frame1,text='PATHの編集？',padding=(20)) # (left, top, 
 label2_1.grid(row=1, column=2)
 
 # button 2
-button2 = ttk.Button(frame1, text='環境変数', command=cole_foo , padding=[20,20,20,20])
+button2 = ttk.Button(frame1, text='環境変数', command=call_foo , padding=[20,20,20,20])
 button2.grid(row=1, column=1)
 
 # Image_3
@@ -71,7 +71,7 @@ label2_1 = ttk.Label(frame1,text='ゴミ箱きえた?',padding=(20)) # (left, to
 label2_1.grid(row=2, column=2)
 
 # button 3
-button3 = ttk.Button(frame1, text='デスクトップのアイコン', command=cole_boo , padding=[20,20,20,20])
+button3 = ttk.Button(frame1, text='デスクトップのアイコン', command=call_boo , padding=[20,20,20,20])
 button3.grid(row=2, column=1)
 
 # Image_4
@@ -86,7 +86,7 @@ label4_1 = ttk.Label(frame1,text='終了する？',padding=(20)) # (left, top, r
 label4_1.grid(row=3, column=2)
 
 # button 4
-button4 = ttk.Button(frame1, text='Exit', command=cole_goodbye , padding=[20,20,20,20])
+button4 = ttk.Button(frame1, text='Exit', command=call_goodbye , padding=[20,20,20,20])
 button4.grid(row=3, column=1)
 
 root.mainloop()
