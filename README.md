@@ -7,3 +7,7 @@
 ### ２環境変数を開く
 
 ### ３デスクトップのアイコン表示を開く
+
+# Release
+
+> https://github.com/masahiroid/Shell-when-forgotten/releases
