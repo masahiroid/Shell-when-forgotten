@@ -1,6 +1,6 @@
 # わすれた時のSHELL
 
-<center><img border="0" width="40%" height="40%" alt="" src="https://kanamesolutions.com/github_img/capture_06202022_040649.png"></center>
+<center><img border="0" width="40%" height="40%" alt="" src="https://kanamesolutions.ciao.jp/github_img/capture_06202022_040649.png"></center>
 
 ### １DirectX確認ツールの起動　
 
